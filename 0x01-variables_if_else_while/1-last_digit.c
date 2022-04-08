@@ -8,8 +8,9 @@
 #include <stdio.h>
 
 /**
+ * main - Prints the last digit of a randomy generated number and whether
+ * it is greater than 5, less than 6, or 0.
  *
- * main - Entry point
  * Return: Always 0 if success
  */
 
