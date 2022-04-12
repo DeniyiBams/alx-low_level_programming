@@ -1,6 +1,8 @@
 #include <unistd.h>
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/*
+ * File: main.h
+ * Auth: Abdul Adeniyi
+ */
+
+int _putchar(char c);
