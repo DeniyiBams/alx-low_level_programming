@@ -1,3 +1,8 @@
+/*
+ * File: 100-times_tables.c
+ * Auth: Abdul Bamigboye
+ */
+
 #include "main.h"
 
 /**
