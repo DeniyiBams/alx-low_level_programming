@@ -2,7 +2,8 @@
 
 /**
  * add - to add two integerss.
- *
+ * @num1: first number to be added
+ * @num2: seconf=d number to be added
  * Return: result
  */
 
