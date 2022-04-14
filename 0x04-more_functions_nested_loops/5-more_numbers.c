@@ -9,7 +9,7 @@ void more_numbers(void)
 	int num;
 	int count = 0;
 
-	while (count != 10)
+	while (count != '10')
 	{
 		for (num = '0'; num <= '14'; num++)
 			_putchar(num);
@@ -17,4 +17,5 @@ void more_numbers(void)
 		
 		count++;
 	}
+	_putchar('\n');
 }
