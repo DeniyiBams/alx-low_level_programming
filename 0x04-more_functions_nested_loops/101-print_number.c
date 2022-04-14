@@ -3,6 +3,8 @@
 /**
  * print_number - to print an integer
  * @n: integer
+ *
+ * Return: Always 0
  */
 
 void print_number(int n)
@@ -37,7 +39,9 @@ void print_number(int n)
 		power = power * 10;
 		i++;
 	}
+
 	j = power;
+
 	while (j >= 1)
 	{
 		numchar = (temp / j) % 10;
