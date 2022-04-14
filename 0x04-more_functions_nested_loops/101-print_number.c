@@ -22,12 +22,12 @@ void print_number(int n)
 		temp = n;
 
 	number = temp;
-
 	while (number >= 10)
 	{
 		number = number / 10;
 		digit++;
 	}
+
 	digits = digit + 1;
 	power = 1;
 	i = 1;
