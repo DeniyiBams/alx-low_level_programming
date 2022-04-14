@@ -2,8 +2,7 @@
 
 /**
  * print_number - to print an integer
- * @n: integer
- *
+ * @n: number tested
  * Return: Always 0
  */
 
@@ -13,15 +12,14 @@ void print_number(int n)
 	unsigned int temp, numchar, number;
 
 	digit = 0;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		temp = -n;
 	}
 	else
-	{
 		temp = n;
-	}
 
 	number = temp;
 
