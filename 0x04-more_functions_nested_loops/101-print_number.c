@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
  * print_number - to print an integer
  * @n: number tested
+ *
  * Return: Always 0
  */
 
