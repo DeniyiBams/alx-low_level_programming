@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_line
+ * print_line - printing underscores
  * @n: number of times entered
+ * Return: Always 0
  */
 
 void print_line(int n)
