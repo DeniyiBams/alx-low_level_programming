@@ -13,7 +13,7 @@ int main(void)
 	int key_num, symbol, sum_check;
 
 	srand(time(NULL));
-	sum_check = 2300;
+	sum_check = 2772;
 	key_num = 0;
 
 	while (key_num < (sum_check - 122))
