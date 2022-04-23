@@ -3,38 +3,40 @@
 /**
  * cap_string - function to capitalize all words of a string.
  * @str: analized string
- * 
  * Return: string with capitalized words
  */
 
 char *cap_string(char *str)
 {
-	int i;
-	int j;
-	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
+	int i, j, counter;
 
-	i = 0;
+	i = counter = 0;
 
 	while (str[i] != '\0')
-	{
-		if (i == 0 && str[i] >= 97 && str[i] <= 122)
-		{
-			str[i] = str[i] - 32;
-		}
-
-		j = 0;
-
-		while (c[j] != '\0')
-		{
-			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
-			{
-				str[i + 1] = str[i + 1] - 32;
-			}
-
-			j++;
-		}
-
 		i++;
+
+	for (j = 0; j < i; j++)
+	{
+		if (counter == 0)
+		{
+			if (str[j] >= 'a' && str[j] <= 'z')
+				str[j] = str[j] - 32;
+			else
+				counter++;
+		}
+
+		if (str[j] == '!' || str[j] == '"' || str[j] == '(' || str[j] == ')')
+			counter = 0;
+		else if (str[j] == ',' || str[j] == '.' || str[j] == '{' || str[j] == '}')
+			counter = 0;
+		else if (str[j] == ';' || str[j] == '?' || str[j] == '\n')
+			counter = 0;
+		else if (str[j] == '\t')
+			counter = 0;
+		else if (str[j] == ' ')
+			counter = 0;
+		else
+			counter++;
 	}
 
 	return (str);
