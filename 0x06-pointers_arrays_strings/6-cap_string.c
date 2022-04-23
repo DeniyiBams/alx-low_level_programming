@@ -21,7 +21,7 @@ char *cap_string(char *dest)
 			else
 				for (j = 0; j < 13; j++)
 				{
-					if (a[j] == dest[i] - 1)
+					if (a[j] == *(dest + i - 1))
 						dest[i] = dest[i] - 32;
 				}
 		}
