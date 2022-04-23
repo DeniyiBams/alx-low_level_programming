@@ -2,9 +2,9 @@
 
 /**
  * cap_string - function to capitalize all words of a string.
- * @s: string
+ * @s: analized string
  * 
- * Return: dest
+ * Return: string with capitalized words
  */
 
 char *cap_string(char *s)
@@ -13,6 +13,7 @@ char *cap_string(char *s)
 	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	i = 0;
+
 	while (*(s + i) != '\0')
 	{
 		if (*(s + i) >= 'a' && *(s + i) <= 'z')
@@ -34,5 +35,6 @@ char *cap_string(char *s)
 		}
 		i++;
 	}
+
 	return (s);
 }
