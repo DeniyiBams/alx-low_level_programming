@@ -14,7 +14,7 @@ char *cap_string(char *dest)
 	{
 		if (dest[i] >= 'a' && dest[i] <= 'z')
 			if (i == 0)
-				dest[i] = dest[i] = 32;
+				dest[i] = dest[i] - 32;
 			else
 				for (j = 0; j < 13; j++)
 				{
