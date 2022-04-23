@@ -5,6 +5,7 @@
  * @s1: first string
  * @s2: second string
  * Return: Difference
+ *
  */
 
 int _strcmp(char *s1, char *s2)
@@ -17,5 +18,5 @@ int _strcmp(char *s1, char *s2)
 	if (*s1 == *s2)
 		return (0);
 	else
-		return(*s1 - *s2);
+		return (*s1 - *s2);
 }
