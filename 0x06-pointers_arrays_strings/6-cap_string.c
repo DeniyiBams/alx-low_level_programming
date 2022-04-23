@@ -13,6 +13,7 @@ char *cap_string(char *dest)
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 		if (dest[i] >= 'a' && dest[i] <= 'z')
+		{
 			if (i == 0)
 				dest[i] = dest[i] - 32;
 			else
@@ -21,6 +22,7 @@ char *cap_string(char *dest)
 					if (a[j] == dest[i - 1])
 						dest[i] = dest[i] - 32;
 				}
+		}
 	}
 
 	return (dest);
