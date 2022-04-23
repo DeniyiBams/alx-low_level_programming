@@ -2,34 +2,37 @@
 
 /**
  * cap_string - function to capitalize all words of a string.
- * @dest: string
+ * @s: string
  * 
  * Return: dest
  */
 
-char *cap_string(char *dest)
+char *cap_string(char *s)
 {
 	int i, j;
-	int a[] = {32, 125, 123, 41, 40, 34, 63, 33, 46, 59, 44, 10, 9};
+	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	for (i = 0; dest[i] != '\0'; i++)
+	i = 0;
+	while (*(s + i) != '\0')
 	{
-		if (dest[i] >= 'a' && dest[i] <= 'z')
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
 			if (i == 0)
 			{
-				dest[i] = dest[i] - 32;
+				*(s + i) = *(s + i) - 32;
 			}
 			else
 			{
-				for (j = 0; j < 13; j++)
+				for (j = 0; j <= 12; j++)
 				{
-					if (a[j] == *(dest + i - 1))
-						dest[i] = dest[i] - 32;
+					if (a[j] == *(s + i - 1))
+					{
+						*(s + i) = *(s + i) - 32;
+					}
 				}
 			}
 		}
+		i++;
 	}
-
-	return (dest);
+	return (s);
 }
