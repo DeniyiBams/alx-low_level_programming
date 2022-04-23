@@ -22,4 +22,6 @@ char *cap_string(char *dest)
 						dest[i] = dest[i] - 32;
 				}
 	}
+
+	return (dest);
 }
