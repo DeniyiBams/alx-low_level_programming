@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * infinite_add - function to add two numbers
@@ -6,6 +7,7 @@
  * @n2: second number
  * @r: buffer where the function will use to store the result
  * @size_r: the buffer size
+ * Return: string
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
