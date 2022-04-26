@@ -4,6 +4,8 @@
  * _strpbrk - function to search a string for any set of byte
  * @s: string in question
  * @accept: string used
+ *
+ * Return: the byte(s) in s for success and NULL if no byte is found
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -20,5 +22,6 @@ char *_strpbrk(char *s, char *accept)
 		if (accept[j])
 			return (s + i);
 	}
+
 	return (0);
 }
