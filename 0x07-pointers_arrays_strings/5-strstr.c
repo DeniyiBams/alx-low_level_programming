@@ -5,13 +5,13 @@
  * @haystack: string to check
  * @needle: substring to be checked
  *
- * Return: pointer to the beginning of the located substring or NULL if substring is not found
+ * Return: pointer to the beginning of the located substring or NULL
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int j = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
 	while (haystack[i])
 	{
