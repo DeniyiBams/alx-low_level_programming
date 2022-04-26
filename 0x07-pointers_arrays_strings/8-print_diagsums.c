@@ -7,20 +7,20 @@
  *
  * Return: chessboard.
  */
+
 void print_diagsums(int *a, int size)
 {
-	int i, j, sumdiag1 = 0, sumdiag2 = 0, step1, step2;
+	int i, j, p, l = 0, r = 0;
 
-	for (i = 0; i <= (size - 1); i++)
+	for (i = 0; i < size; i++)
 	{
-		step1 =  (size + 1) * i;
-		sumdiag1 = sumdiag1 + *(a + step1);
+		p = (i * size) + i;
+		l += *(a + p);
 	}
-
-	for (j = 1; j <= size; j++)
+	for (j = 0; j < size; j++)
 	{
-		step2 = (size - 1) * j;
-		sumdiag2 = sumdiag2 + *(a + step2);
+		p = (j * size) + (size - 1 - j);
+		r += *(a + p);
 	}
-	printf("%d, %d\n", sumdiag1, sumdiag2);
+	printf("%i, %i\n", l, r);
 }
