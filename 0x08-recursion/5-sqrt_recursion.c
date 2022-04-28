@@ -6,6 +6,8 @@
  * Return: the natural square root of a number
  */
 
+int sqrt_check(int a, int b);
+
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
