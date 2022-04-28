@@ -21,7 +21,6 @@ int _sqrt_recursion(int n)
  * sqrt_check - to check for the squareroot of a number
  * @a: first integer
  * @b: second integer
- *
  * Return: square root of a number
  */
 
