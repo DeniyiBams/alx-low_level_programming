@@ -22,6 +22,7 @@ void Error(void)
 /**
  * allDigits - checks if all the characters are digits.
  * @arg: the arguments of program.
+ *
  * Return: 1 all digits 0 otherwise.
  */
 
