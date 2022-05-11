@@ -6,7 +6,6 @@
  * @name: pointer to name of the dog
  * @age: age
  * @owner: owner
- * 
  * Return: void
  */
 
