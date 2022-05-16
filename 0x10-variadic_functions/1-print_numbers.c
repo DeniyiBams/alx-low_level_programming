@@ -10,21 +10,23 @@
  * Return: void
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-        unsigned int i;
-	int x;
-        va_list args;
+	unsigned int i;
+	va_list arguments;
 
-        va_start(args, n);
-        for (i = 0; i < n; i++)
-        {
-        	x = va_arg(args, int);
+	va_start(arguments, n);
 
-                printf("%d", x);
-                if (i < (n - 1) && seperator)
-                	printf("%s", seperator);
-        }
-	va_end(args);
+	for (i = 1; i <= n; i++)
+	{
+		printf("%i", va_arg(arguments, int));
+		if (i < n && separator)
+			printf("%s", separator);
+		else
+		{
+			;
+		}
+	}
 	printf("\n");
+	va_end(arguments);
 }
