@@ -6,6 +6,8 @@
  * print_numbers - to print numbers seperated by a seperator
  * @seperator: string to be printed between numbers
  * @n: number of integers passed
+ *
+ * Return: void
  */
 
 void print_numbers(const char *seperator, const unsigned int n, ...)
@@ -22,6 +24,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
                 if (i < n - 1 && seperator)
                 	printf("%s", seperator);
         }
+
         printf("\n");
 	va_end(args);
 }
