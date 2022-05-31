@@ -9,7 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	long int i, j;
+	int i, j;
 	unsigned long int value, extract = 0;
 
 	if (n == 0)
@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 		value = value >> 1;
 	for (i = j - 1; i >= 0; i--)
 	{
-		extract = 1 << 1;
+		extract = 1 << i;
 
 		if ((n & extract) != 0)
 			_putchar('1');
